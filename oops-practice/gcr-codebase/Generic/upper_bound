@@ -1,0 +1,25 @@
+import java.util.*;
+
+class Utility {
+
+    public static void printNumbers(List<? extends Number> list) {
+
+        for (Number n : list) {
+            System.out.println(n);
+        }
+    }
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        List<Integer> a = Arrays.asList(10, 20, 30);
+
+        List<Double> b = Arrays.asList(5.5, 6.6);
+
+        Utility.printNumbers(a);
+
+        Utility.printNumbers(b);
+    }
+}
